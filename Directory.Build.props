@@ -1,0 +1,33 @@
+<Project>
+
+  <!-- Common properties -->
+  <PropertyGroup>
+    <!--Setting this to true enables the usage of the latest version of C# language features.-->
+    <AcceleratBuilnInVisualStudio>true</AcceleratBuilnInVisualStudio>
+
+    <!--Setting this to true disables the automatic transitive project references feature.-->
+    <DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
+
+    <!--Specifies the location of the code analysis ruleset file.-->
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    
+    <!-- Enable the last version of C# -->
+    <LangVersion>latest</LangVersion>
+
+    <!-- Enable implict usings -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Disable the Analyzers in Release configuration -->
+    <RunAnalyzers Condition="'$(Configuration)' == 'Release'">false</RunAnalyzers>
+  </PropertyGroup>
+
+  <!-- Common files -->
+
+  <!-- Common NuGet packages -->
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.21.0.86780">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
