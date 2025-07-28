@@ -9,7 +9,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetings.Core", "src\Core\Meetings.Core.csproj", "{619D5B1D-0ED5-4666-8BBA-6EF29241BB86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetings.Core.Tests", "tests\Core.Tests\Meetings.Core.Tests.csproj", "{59953763-E97E-4532-91BB-E4CD4CBCE7C0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{619D5B1D-0ED5-4666-8BBA-6EF29241BB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619D5B1D-0ED5-4666-8BBA-6EF29241BB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619D5B1D-0ED5-4666-8BBA-6EF29241BB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619D5B1D-0ED5-4666-8BBA-6EF29241BB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59953763-E97E-4532-91BB-E4CD4CBCE7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59953763-E97E-4532-91BB-E4CD4CBCE7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59953763-E97E-4532-91BB-E4CD4CBCE7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59953763-E97E-4532-91BB-E4CD4CBCE7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
