@@ -9,4 +9,12 @@ public class MeetingManager
         Console.WriteLine($"Adding {command.GuestsNumber} attendees to meeting {command.MeetingId}");
         return Task.CompletedTask;
     }
+
+    public Task AddNotAttendee(AddMeetingNotAttendee command)
+    {
+        // Logic to add an attendee to a meeting
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Adding not attendee to meeting {command.MeetingId}");
+        return Task.CompletedTask;
+    }
 }
