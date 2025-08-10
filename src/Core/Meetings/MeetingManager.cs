@@ -49,4 +49,12 @@ public class MeetingManager
         Console.WriteLine($"Creating meeting with title: {command.Title}");
         return Task.CompletedTask;
     }
+
+    public Task<IReadOnlyList<int>> GetAttendees(GetMeetingAttendee query)
+    {
+        // Logic to GetAttendees a meeting
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Deleting meeting {query.MeetingId}");
+        return Task.FromResult<IReadOnlyList<int>>([]);
+    }
 }
