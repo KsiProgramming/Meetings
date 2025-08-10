@@ -1,8 +1,8 @@
 ﻿namespace Meetings.Meetings;
 
-public class ChangeMeetingMainAttributes
+public class UpdateMeetingMainAttributes
 {
-    public ChangeMeetingMainAttributes(
+    public UpdateMeetingMainAttributes(
         Guid meetingId,
         string title,
         DateTime termStartDate,

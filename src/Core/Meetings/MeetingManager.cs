@@ -26,7 +26,7 @@ public class MeetingManager
         return Task.CompletedTask;
     }
 
-    public Task ChangeMainAttributes(ChangeMeetingMainAttributes command)
+    public Task ChangeMainAttributes(UpdateMeetingMainAttributes command)
     {
         // Logic to create a meeting
         // This is a placeholder for the actual implementation
