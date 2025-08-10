@@ -1,5 +1,4 @@
-﻿
-namespace Meetings.Meetings;
+﻿namespace Meetings.Meetings;
 
 public class MeetingManager
 {
