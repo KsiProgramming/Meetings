@@ -62,7 +62,15 @@ public class MeetingManager
     {
         // Logic to GetDetails a meeting
         // This is a placeholder for the actual implementation
-        Console.WriteLine($"Deleting meeting {query.MeetingId}");
+        Console.WriteLine($"GetDetails {query.MeetingId}");
         return Task.FromResult<IReadOnlyList<int>>([]);
+    }
+
+    public Task<bool> RemoveAttendee(RemoveMeetingAttendee GetDetails)
+    {
+        // Logic to GetDetails a meeting
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Remove Attendee {GetDetails.MeetingId}");
+        return Task.FromResult(true);
     }
 }

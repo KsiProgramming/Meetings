@@ -1,6 +1,6 @@
 ﻿namespace Meetings.Meetings;
 
-internal class RemoveMeetingAttendee
+public class RemoveMeetingAttendee
 {
     public RemoveMeetingAttendee(Guid meetingId, Guid attendeeId, string removingReason)
     {
