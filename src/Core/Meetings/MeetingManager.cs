@@ -41,4 +41,12 @@ public class MeetingManager
         Console.WriteLine($"Updating not attendee decision for meeting {command.MeetingId}");
         return Task.CompletedTask;
     }
+
+    public Task Create(CreateMeeting command)
+    {
+        // Logic to create a meeting
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Creating meeting with title: {command.Title}");
+        return Task.CompletedTask;
+    }
 }
