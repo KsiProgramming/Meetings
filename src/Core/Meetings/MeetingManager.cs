@@ -33,4 +33,12 @@ public class MeetingManager
         Console.WriteLine($"Changing main attributes for meeting {command.MeetingId}");
         return Task.CompletedTask;
     }
+
+    public Task UpdateNotAttendeeDecision(UpdateNotAttendeeDecision command)
+    {
+        // Logic to update not attendee decision
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Updating not attendee decision for meeting {command.MeetingId}");
+        return Task.CompletedTask;
+    }
 }
