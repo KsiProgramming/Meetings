@@ -17,4 +17,12 @@ public class MeetingManager
         Console.WriteLine($"Adding not attendee to meeting {command.MeetingId}");
         return Task.CompletedTask;
     }
+
+    public Task Cancel(CancelMeeting command)
+    {
+        // Logic to cancel a meeting
+        // This is a placeholder for the actual implementation
+        Console.WriteLine($"Cancelling meeting {command.MeetingId}");
+        return Task.CompletedTask;
+    }
 }
