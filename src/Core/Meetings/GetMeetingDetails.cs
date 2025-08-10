@@ -1,6 +1,6 @@
 ﻿namespace Meetings.Meetings;
 
-internal class GetMeetingDetails
+public class GetMeetingDetails
 {
     public GetMeetingDetails(Guid meetingId)
     {
